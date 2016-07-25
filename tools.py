@@ -81,7 +81,7 @@ def circle(ima):
 
 
 def get_tk_image(url, resize=(400, 150), iscircle=False):
-    url = url or "http://192.168.41.76/upload/esun/avatar/30/41/3041705244d611e6bf19.png"
+    url = url or "http://img.m.500.com/esun/avatar/20/a8/20a86cceeeea11e4adac.jpg"
     image_bytes = urlopen(url).read()
     data_stream = io.BytesIO(image_bytes)
     pil_image = PIL.Image.open(data_stream)
@@ -92,7 +92,7 @@ def get_tk_image(url, resize=(400, 150), iscircle=False):
     return tk_image
 
 def get_user_photo(url):
-    url = url or "http://img.m.500.com/esun/avatar/20/a8/20a86cceeeea11e4adac.jpg?"
+    url = url or "http://img.m.500.com/esun/avatar/20/a8/20a86cceeeea11e4adac.jpg"
     image_bytes = urlopen(url).read()
     data_stream = io.BytesIO(image_bytes)
     pil_image = PIL.Image.open(data_stream)
