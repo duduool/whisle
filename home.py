@@ -145,7 +145,7 @@ if __name__ == "__main__":
 
     params = {
         "background": get_tk_image("http://c.m.500.com/mobile/touch/images/bifen/index-header.jpg", resize=(400, 50)),
-        "matches": [get_match_list("2016-07-23")]
+        "matches": [get_match_list()]
     }
     h = HomeFrame(root, {}, **params)
     root.bind_all("<MouseWheel>", lambda event, canvas=h.Canvas: canvas.yview_scroll(-1*(event.delta/120), "units"))
